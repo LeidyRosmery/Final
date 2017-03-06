@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Enlazando css que se llama style.css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Enlazando tipo de letra "Raleway" -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+
+  <title>Laboratoria</title>
+
+</head>
+<body>
+
+  <div class="dropdown"    >Hola Coders
+	<button onclick="myDrop()" class="dropbtn">&#9776;</button>
+	<div id="myDropdown" class="dropdown-content" ALIGN="RIGHT">
+		<a href="file:///C:/Proyecto17/coders.html ">CODERS</a>
+		<a href="file:///C:/Proyecto17/salida.html ">SALIR</a>
+	</div>
+</div>
+
+  <div class="" ALIGN="CENTER" >
+    <img src="assets/image/images.jpg" />
+  </div>
+
+  <p> <strong>Que es Laboratoria ?  </strong></p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <input type="button" value= "Sprint 1" onclick=" mostarOcultar('primero');" >   <input type="button" value="Sprint 2" onclick="mostarOcultar('segundo');" >  <input type="button" value="Sprint 3"  >
+
+
+  <!-- Texto del primer sprint" -->
+  <div id="primero">
+    <h3> SPRINT 1 : Introducciones a la programacion </h3>
+      <ol>
+        <li>Funciones de programacion </li>
+        <li>Funciones </li>
+        <li>Arreglos </li>
+        <li>Objetos </li>
+      </ol>
+    <!-- Formulario del primer sprint" -->
+    <p>____________________________________________________________________________________</p>
+    <form onsubmit="return false">
+
+        <h3> Existen dos tipos de funciones</h3>
+          <input type="radio" name="valor1" class="sprint1" value="Expresadas" class="" checked>Expresadas y Declaradas<br>
+          <input type="radio" name="valor1" class="sprint1" value="Explicitas"> Explicitas y Declaradas<br>
+          <input type="radio" name="valor1" class="sprint1" value="Derivada"> Expresadas y derivadas<br>
+
+        <h3> Elija una propiedad de los arreglos?</h3>
+          <input type="radio" name="valor2" class="sprint1" value="clear" checked> Clear<br>
+          <input type="radio" name="valor2" class="sprint1" value="pop"> Pop<br>
+          <input type="radio" name="valor2" class="sprint1" value="add"> Add <br>
+
+      <h3> Un objeto tiene ...... y ..... ?</h3>
+        <input type="radio" name="valor3" class="sprint1" value="partes">Partes y validaciones <br>
+        <input type="radio" name="valor3" class="sprint1" value="numeros" checked>Numeros y letras <br>
+        <input type="radio" name="valor3" class="sprint1" value="propiedades">Propiedades y valores <br>
+        <button type="submit" id="enviarPrimero" onclick="calcularPrimero();"> Enviar1 </button>
+
+    </form>
+      <hr>
+      <div id="resultadoPrimero"></div>
+    </div>
+
+
+  <div id="segundo">
+    <h3> SPRINT 2 : Introduccion al desarrollo web y construccion de paginas web </h3>
+      <ol>
+        <li>Ciclo de vida del desarrollo web y arquitectura basica cliente7servidor </li>
+        <li>HTML y JavaScript en el navegador </li>
+        <li>Manejo de comandos basicos de git en la terminal </li>
+        <li>Pruebas unitarias </li>
+        <li>Git / Resolucion de conflictos / Braching model </li>
+        <li>DOM </li>
+      </ol>
+
+  <p>__________________________________________________________________________________________</p>
+  <!-- Formulario del segundo sprint" -->
+  <h3> Quiz </h3>
+    <form onsubmit="return false">
+    <h3> Cual es el comando para iniciar un repositorio desde la consola ?</h3>
+      <input type="radio" name="valor3"  class="conjunto2" value="GitIn" checked> Git init .<br>
+      <input type="radio" name="valor3"  class="conjunto2" value="init"> Git init <br>
+      <input type="radio" name="valor3"  class="conjunto2" value="add"> Git init add <br>
+
+
+    <h3> Cual es la finalidad de hacer una prueba unitaria?</h3>
+      <input type="radio" name="valor4"  class="conjunto2" value="comprobar" checked>Comprobar que el codigo funciona correctamente <br>
+      <input type="radio" name="valor4"  class="conjunto2" value="valores"> Darle valores a los parametros de dichas funciones <br>
+      <input type="radio" name="valor4"  class="conjunto2" value="noTiene"> No tiene ningun fin <br>
+
+
+    <h3> Que significa el DOM ?</h3>
+      <input type="radio" name="valor5"  class="conjunto2" value="dual" checked>Dual Object Model <br>
+      <input type="radio" name="valor5" class="conjunto2"  value="Object"> Document Object Model <br>
+      <input type="radio" name="valor5"  class="conjunto2" value="obsolet"> Document Obsolet Model <br>
+      <button type="submit" id="enviarSegundo" onclick="calcularSegundo();"> Enviar </button>
+
+    </form>
+      <hr>
+    <div id="resultadoSegundo"></div>
+  </div>
+
+  <script type="text/javascript"  src="assets/js/app.js"> </script>
+  <script type="text/javascript"  src="assets/js/dropDown.js"> </script>
+
+</body>
+</html>
